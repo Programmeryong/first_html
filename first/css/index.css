@@ -2,89 +2,61 @@
 /**
  *index.html的样式表
  */
-/*====================公共样式表==================*/
-html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
-img { vertical-align: center; }
-ul, li { list-style-type: none; margin:0px; padding:0px;}
-h1, h2, h3, h4, h5, h6 { font-size: 14px; }
-body, input, select, button, textarea { font-size: 16px; font-family:"微软雅黑";  }
-button { cursor: pointer; }
-i, em, cite { font-style: normal; }
-/*aside section,.body{display:block; width:1000px; margin:0 auto;}*/
-a, a:link { color: #000; text-decoration: none; }/*设置a标签基本样式与伪类选择器设置*/
-a:visited {}
-a:active, a:hover { text-decoration: none; color:#d00000; }
-a:focus { outline: none; } 
-.orange { color:#F26E01;}
+/*==============mian开始==========*/
+.content_Af {
+	width: 1000px;
+	overflow: hidden;
+}
+.content_Af h1{
+	width: 1000px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+.content_Af .list {
+	width: 1100px;
+}
+.content_Af .list li{
+	width: 228px;
+	float: left;
+	margin: 0 29px 0 0;
+	text-align: center;
+}
+.content_Af .list li img:hover{
+	opacity: 0.8;
+	/*光影效果，只限于白色底，其他背景颜色就不可以用了，只能用滤镜*/
+}
 
-.clear {
-	clear:both;
+.content_Bf{
+	width: 1000px;
+	height: 400px;
+	margin: 20px 0 0 0;
+	/*border: 1px solid #ccc;*/
 }
-/*================公共样式表结束==================*/
-
-/*====================主体样式表==================*/
-header{
-	width:100%;
-	height: 694px;
-	border:1px solid #000;
-}
-main{
-	width:1000px;
-	height: 500px;
-	margin:0 auto;
-	border:1px solid #ccc;
-}
-footer{
-	width: 100%;
-	height: 300px;
-	border: 1px solid #f00;
-}
-/*=========header开始=============*/
-.header_top{
-	width:1000px;
-	height: 100px;
-	margin:0 auto;
-	border: 1px solid #ff0;
-}
-.header_top_left{
-	width:225px;
-	height: 100px;
-	float: left;
-	/*border: 1px solid #0ff;*/
-}
-.header_top_left > img{
-	margin:15px 0 0 0;
-	line-height: 100px;
-}
-.header_top_right{
-	width:620px;
-	height: 100px;
-	float: right;
-	border: 1px solid #0f0;
-}
-.header_top_rightT{
-	width:150px;
-	height: 30px;
-	float:right;
-	/*border: 1px solid #00f;*/
-	font-size: 10px;
-}
-.header_top_rightT ul li{
-	float: left;
-	line-height: 30px;
-	margin: 5px 5px 0px;
-}
-.header_top_rightD{
-	width: 100%;
-	height: 60px;
-	/*margin: 0 auto;*/
-	margin:10px 0 0 0;
-	float: left;
-	border: 1px solid #c0c;
-}
-.header_down{
-	width:100%;
-	height:590px;
+.content_Bf_left{
+	width: 590px;
+	height: 400px;
+	float:left;
 	border: 1px solid #f0f;
 }
-/*=========header结束=============*/
+.Bf_top{
+	width: 590px;
+	height: 50px;
+	line-height: 50px;	
+}
+.Bf_top h1{
+	font-size: 18px;
+	float: left;
+}
+.Bf_top h3{
+	float: right;
+}
+.content_Bf_right{
+	width: 390px;
+	height: 400px;
+	float: right;
+	border: 1px solid #ff0;
+}
+/*============mian结束============*/
+
+

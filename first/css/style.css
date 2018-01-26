@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/**
+ * 通用样式表
+ * @authors Your Name (you@example.org)
+ * @date    2018-01-26 19:58:21
+ * @version $Id$
+ */
+
+/*====================公共样式表==================*/
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { vertical-align: center; }
+ul, li { list-style-type: none; margin:0px; padding:0px;}
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size: 16px; font-family:"微软雅黑";  }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+/*aside section,.body{display:block; width:1000px; margin:0 auto;}*/
+a, a:link { color: #000; text-decoration: none; }/*设置a标签基本样式与伪类选择器设置*/
+a:visited {}
+a:active, a:hover { text-decoration: none; color:#d00000; }
+a:focus { outline: none; } 
+.orange { color:#F26E01;}
+
+.clear {
+	clear:both;
+}
+/*================公共样式表结束==================*/
+/*====================主体样式表==================*/
+header{
+	width:100%;
+	overflow: hidden;
+	position: relative;
+}
+main{
+	width:1000px;
+	height: 700px;
+	margin:10px auto 0;
+	border:1px solid #ccc;
+}
+footer{
+	width: 100%;
+}
+/*====================主体样式表==================*/
+
+/*=========header开始=============*/
+.header_box{
+		width:120%;
+		height: 120px;
+		background: #fff;
+		/*
+		    在父级元素上设置相对定位
+			在这里用绝对定位，这样下面的图片就会往上移动
+			设置120%就是为了让圆角消失在页面中，利用溢出隐藏来处理
+			然后利用绝对定位的左边-10%，这样就可以把页面移动到中间
+			在默认的情况下，元素是透明的，需要加上白色背景
+		*/
+		position: absolute;
+		left: -10%;
+		border-bottom: 3px solid red;
+		box-shadow: 0px 3px 5px #555;
+		border-bottom-right-radius: 40%;
+		border-bottom-left-radius: 40%;
+	}
+.header_top{
+	width:1000px;
+	height: 100px;
+	margin:0 auto;
+}
+/*logo部分*/
+.header_top_left{
+	width:225px;
+	height: 100px;
+	float: left;
+}
+.header_top_left > img{
+	margin:15px 0 0 0;
+	line-height: 100px;
+}
+/*右边的导航栏与语言选择*/
+.header_top_right{
+	width:620px;
+	height: 100px;
+	float: right;
+}
+.header_top_rightT{
+	width:150px;
+	height: 30px;
+	float:right;
+	font-size: 10px;
+}
+.header_top_rightT ul li{
+	float: left;
+	line-height: 30px;
+	margin: 5px 5px 0px;
+}
+/*导航栏部分*/
+.header_top_rightD{
+	width: 100%;
+	height: 60px;
+	margin:10px 0 0 0;
+	float: left;
+	position: relative;
+}
+.header_top_rightD ul li{
+	width:70px;
+	height: 60px;
+	float: left;
+	margin-right: 15px;
+	line-height: 60px;
+	text-align: center;
+}
+/*第一个为红色字体*/
+.header_top_rightD ul li:nth-of-type(1){
+	color: red;
+}
+/*鼠标移动到上面为红色*/
+.header_top_rightD ul li:hover{
+	color: red;
+}
+/*设置为行内块级元素*/
+.navigation {
+    display: inline-block;
+}
+/*二级菜单为隐藏 绝对定位在上一级的下面 
+	box-shadow固定了内容大小
+*/
+.navigation-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/*所有得而A标签高度为50，颜色是黑色 内边距为10 
+	变成块级元素可以自动换行 
+	使它们自动排列在下面
+	如果删除了display:block;的话，就会排列成一行
+*/
+.navigation-content a {
+	height: 50px;
+    color: black;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: block;
+}
+/*设置最后一个栏的底部边框为2像素红色*/
+.navigation-content a:last-child{
+	border-bottom: 2px solid red;
+}
+/*鼠标移动的交互效果*/
+.navigation-content a:hover{
+	background-color: #f1f1f1;
+}
+.navigation:hover .navigation-content {
+    display: block;
+}
+
+/*导航栏下的广告部分*/
+.header_down img{
+	margin: 90px 0 0 0;
+	width:100%;
+	height:100%;
+}
+
+/*=========header结束=============*/
+
+/*===========footer开始=============*/
+.footer_top{
+	width:100%;
+	height: 200px;
+	background: rgba(240,240,240,1);
+}
+.footer_content{
+	width:1010px;
+	margin: 0 auto;
+}
+.footer_content p{
+	width: 200px;
+	float: left;
+}
+.footer_content p span {
+	display: block;
+	margin: 10px 0 10px 35px;
+}
+.footer_content a {
+	color: rgba(128,128,128,1);
+}
+.footer_content p span:hover{
+	color: red;
+}
+.footer_content>p>span:nth-of-type(1){
+	margin:35px 0 20px 35px;
+	color: #000;
+	font-size: 16px;
+}
+.footer_right{
+	width: 200px;
+	float: right;
+	margin: 35px 0 0 0;
+}
+.footer_right img{
+	width: 120px;
+	padding-left: 10px;
+	text-align: center;
+}
+.footer_bown{
+	width: 100%;
+	height: 50px;
+	color: rgba(128,128,128,1);
+}
+.footer_bown_content{
+	width: 1000px;
+	height: 50px;
+	margin: 0 auto;
+}
+.footer_bown-left{
+	width: 500px;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+.footer_bown-left:after{
+	clear:both;
+}
+.footer_bown_content span{
+	margin: 0 0 0 10px;
+}
+.footer_bown_right{
+	width:400px;
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	text-align: right;
+}
+.footer_bown_right li{
+	 float: right;
+	 padding: 0 10px 0 0;
+}
+.footer_bown_right a{
+	color: rgba(128,128,128,1);
+}
+.footer_bown_right a:hover{
+	color: red;
+}
+/*===========footer结束=============*/
