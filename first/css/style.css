@@ -33,8 +33,9 @@ header{
 }
 main{
 	width:1000px;
-	/*height: 700px;*/
+	height: 700px;
 	margin:10px auto 0;
+	border:1px solid #ccc;
 }
 footer{
 	width: 100%;
@@ -212,7 +213,7 @@ footer{
 	height: 50px;
 	margin: 0 auto;
 }
-.footer_bown-left {
+.footer_bown-left{
 	width: 500px;
 	height: 50px;
 	line-height: 50px;
@@ -233,6 +234,7 @@ footer{
 }
 .footer_bown_right li{
 	 float: right;
+	 font-size: 14px;
 	 padding: 0 10px 0 0;
 }
 .footer_bown_right a{
@@ -242,3 +244,48 @@ footer{
 	color: red;
 }
 /*===========footer结束=============*/
+
+
+/*============垂直导航栏开始======================*/
+.cs{
+	width: 240px;
+	position: absolute;
+	top: -75px;
+	float: left;
+	background: #F7F7F7;
+	overflow: hidden;
+}
+.cs > ul > li{
+	line-height: 60px;
+	display: block;
+	padding: 0 0 0 9px;
+}
+.cs > ul > li:hover{
+	border-left: 1px solid	red;
+}
+.min-nav-top{
+	font-size: 20px;
+	padding: 0 0 0 9px;
+	color: #fff;
+	background: url(../img/hd.png);
+}
+.min-nav-down>ul>li{
+	display: none;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+}
+.min-nav-down input {
+	position: absolute;
+	left: -999px;
+}
+.min-nav-down label{
+	display: block;
+}
+.min-nav-down input:checked +label + ul > li{
+	/*display: inline;*/
+	/*display: none;*/
+	background: #fff;
+	display: block;
+}
+/*============垂直导航栏结束======================*/

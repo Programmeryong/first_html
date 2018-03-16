@@ -37,6 +37,7 @@
 	width: 590px;
 	height: 400px;
 	float:left;
+	border: 1px solid #f0f;
 }
 .Bf_top{
 	width: 590px;
@@ -49,6 +50,7 @@
 }
 .Bf_top h3{
 	float: right;
+<<<<<<< HEAD
 	color: rgba(128,128,128,1);
 }
 .Bf_down{
@@ -87,7 +89,7 @@
 	margin: 10px 0 0 0;
 }
 .Bf_down_b ul li{
-	width:590px;
+	/*width:580px;*/
 	height: 40px;
 	line-height: 40px;
 	padding-left: 10px;
@@ -101,34 +103,14 @@
 }
 .Bf_down_b ul li a:hover{
 	color: red;
+=======
+>>>>>>> parent of 73b5e97... html2.0
 }
 .content_Bf_right{
 	width: 390px;
 	height: 400px;
 	float: right;
-}
-.Bfr_top{
-	width: 390px;
-	height: 50px;
-	line-height: 50px;
-}
-.Bfr_top h1{
-	font-size: 18px;
-	float: left;
-}
-.Bfr_top h3{
-	float: right;
-	color: rgba(128,128,128,1);
-}
-.Bfr_down video{
-	width: 390px;
-	height: 280px;
-}
-.Bfr_down p{
-	width: 390px;
-	height: 30px;
-	text-align: center;
-	line-height: 30px;
+	border: 1px solid #ff0;
 }
 /*============mian结束============*/
 

@@ -6,13 +6,11 @@
  * @version $Id$
  */
  main{
-	/*height: 700px;*/
-	/*border: 1px solid red;*/
 	position: relative;
 }
 /*================main开始=============*/
  /*垂直导航栏*/
-.top_navigation{
+/*.top_navigation{
 	position: absolute;
 	top: -65px;
 	width: 220px;
@@ -47,9 +45,13 @@
 .min_nav > ul > li{
 	height: 20px;
 	padding: 0 0 0 50px;
+	margin: 5px 0;
 	line-height: 20px
 	background:#fff;
 }
+.min_nav > ul > li:nth-of-type(1){
+	color: red;
+}*/
 /*导航栏结束*/
 
 
@@ -84,15 +86,21 @@ main .list {
 	width: 750px;
 }
 main .list img{
-	width: 228px;
-	height: 228px;
+	max-width: 228px;
+	max-height: 228px;
 }
 main .list li{
 	width: 228px;
 	float: left;
 	margin: 15px 22px 0 0;
 	text-align: center;
+	overflow: hidden;
 }
 main .list li img:hover{
 	opacity: 0.8;
+	transition: all 0.5s;
+	transform:scale(1.2,1.2);
+}
+.right_content{
+	margin-bottom: 50px;
 }
